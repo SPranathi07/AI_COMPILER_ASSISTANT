@@ -1,0 +1,4964 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-24T14:46:34.784389",
+    "total_samples": 25,
+    "correct_samples": 12,
+    "incorrect_samples": 13,
+    "version": "1.0.0"
+  },
+  "samples": [
+    {
+      "sample_id": "C001",
+      "source_code": "int x = 5;\nint y = 10;\nint sum = x + y;\n",
+      "is_correct": true,
+      "errors": [],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 1,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "5",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "y",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "10",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 11
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "sum",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 3,
+          "column": 9
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 3,
+          "column": 11
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 3,
+          "column": 13
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "y",
+          "line": 3,
+          "column": 15
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 16
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "IDENTIFIER",
+        "SEMICOLON"
+      ],
+      "category": "variable_declaration",
+      "difficulty": "beginner"
+    },
+    {
+      "sample_id": "C002",
+      "source_code": "int a = 3;\nif (a > 0) {\n    return 1;\n} else {\n    return 0;\n}\n",
+      "is_correct": true,
+      "errors": [],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "a",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 1,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "3",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "KEYWORD(if)",
+          "value": "if",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 2,
+          "column": 4
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "a",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "GT",
+          "value": ">",
+          "line": 2,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 2,
+          "column": 10
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 2,
+          "column": 12
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 3,
+          "column": 12
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 13
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "type": "KEYWORD(else)",
+          "value": "else",
+          "line": 4,
+          "column": 3
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 4,
+          "column": 8
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 5,
+          "column": 12
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 5,
+          "column": 13
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 6,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(if)",
+        "LPAREN",
+        "IDENTIFIER",
+        "GT",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(return)",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE",
+        "KEYWORD(else)",
+        "LBRACE",
+        "KEYWORD(return)",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "if_statement",
+      "difficulty": "beginner"
+    },
+    {
+      "sample_id": "C003",
+      "source_code": "int i = 0;\nwhile (i < 10) {\n    i = i + 1;\n}\n",
+      "is_correct": true,
+      "errors": [],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 1,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "KEYWORD(while)",
+          "value": "while",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 2,
+          "column": 7
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 2,
+          "column": 8
+        },
+        {
+          "type": "LT",
+          "value": "<",
+          "line": 2,
+          "column": 10
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "10",
+          "line": 2,
+          "column": 12
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 2,
+          "column": 14
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 2,
+          "column": 16
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 3,
+          "column": 7
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 3,
+          "column": 9
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 3,
+          "column": 11
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 3,
+          "column": 13
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 14
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 4,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(while)",
+        "LPAREN",
+        "IDENTIFIER",
+        "LT",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "while_loop",
+      "difficulty": "beginner"
+    },
+    {
+      "sample_id": "C004",
+      "source_code": "int sum = 0;\nfor (int i = 0; i < 5; i = i + 1) {\n    sum = sum + i;\n}\n",
+      "is_correct": true,
+      "errors": [],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "sum",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 1,
+          "column": 11
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 1,
+          "column": 12
+        },
+        {
+          "type": "KEYWORD(for)",
+          "value": "for",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 2,
+          "column": 6
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 2,
+          "column": 10
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 12
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 2,
+          "column": 14
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 15
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 2,
+          "column": 17
+        },
+        {
+          "type": "LT",
+          "value": "<",
+          "line": 2,
+          "column": 19
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "5",
+          "line": 2,
+          "column": 21
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 22
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 2,
+          "column": 24
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 26
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 2,
+          "column": 28
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 2,
+          "column": 30
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 2,
+          "column": 32
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 2,
+          "column": 33
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 2,
+          "column": 35
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "sum",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 3,
+          "column": 9
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "sum",
+          "line": 3,
+          "column": 11
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 3,
+          "column": 15
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 3,
+          "column": 17
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 18
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 4,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(for)",
+        "LPAREN",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "LT",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "for_loop",
+      "difficulty": "intermediate"
+    },
+    {
+      "sample_id": "C005",
+      "source_code": "int add(int a, int b) {\n    return a + b;\n}\n",
+      "is_correct": true,
+      "errors": [],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "add",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 8
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "a",
+          "line": 1,
+          "column": 13
+        },
+        {
+          "type": "COMMA",
+          "value": ",",
+          "line": 1,
+          "column": 14
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 16
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "b",
+          "line": 1,
+          "column": 20
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 1,
+          "column": 21
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 1,
+          "column": 23
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "a",
+          "line": 2,
+          "column": 12
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 2,
+          "column": 14
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "b",
+          "line": 2,
+          "column": 16
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 17
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 3,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "LPAREN",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "COMMA",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(return)",
+        "IDENTIFIER",
+        "PLUS",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "function",
+      "difficulty": "intermediate"
+    },
+    {
+      "sample_id": "C006",
+      "source_code": "int x = 5;\nif (x > 0) {\n    if (x < 10) {\n        int y = x * 2;\n    }\n}\n",
+      "is_correct": true,
+      "errors": [],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 1,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "5",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "KEYWORD(if)",
+          "value": "if",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 2,
+          "column": 4
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "GT",
+          "value": ">",
+          "line": 2,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 2,
+          "column": 10
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 2,
+          "column": 12
+        },
+        {
+          "type": "KEYWORD(if)",
+          "value": "if",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 3,
+          "column": 8
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 3,
+          "column": 9
+        },
+        {
+          "type": "LT",
+          "value": "<",
+          "line": 3,
+          "column": 11
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "10",
+          "line": 3,
+          "column": 13
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 3,
+          "column": 15
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 3,
+          "column": 17
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 4,
+          "column": 9
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "y",
+          "line": 4,
+          "column": 13
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 4,
+          "column": 15
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 4,
+          "column": 17
+        },
+        {
+          "type": "MULTIPLY",
+          "value": "*",
+          "line": 4,
+          "column": 19
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "2",
+          "line": 4,
+          "column": 21
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 4,
+          "column": 22
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 6,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(if)",
+        "LPAREN",
+        "IDENTIFIER",
+        "GT",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(if)",
+        "LPAREN",
+        "IDENTIFIER",
+        "LT",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "MULTIPLY",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE",
+        "RBRACE"
+      ],
+      "category": "nested_if",
+      "difficulty": "intermediate"
+    },
+    {
+      "sample_id": "C007",
+      "source_code": "int arr[5];\narr[0] = 1;\narr[1] = 2;\nint val = arr[0] + arr[1];\n",
+      "is_correct": true,
+      "errors": [],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "arr",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "LBRACKET",
+          "value": "[",
+          "line": 1,
+          "column": 8
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "5",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "RBRACKET",
+          "value": "]",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 1,
+          "column": 11
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "arr",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "type": "LBRACKET",
+          "value": "[",
+          "line": 2,
+          "column": 4
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "RBRACKET",
+          "value": "]",
+          "line": 2,
+          "column": 6
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 8
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 2,
+          "column": 10
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 11
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "arr",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "type": "LBRACKET",
+          "value": "[",
+          "line": 3,
+          "column": 4
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "RBRACKET",
+          "value": "]",
+          "line": 3,
+          "column": 6
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 3,
+          "column": 8
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "2",
+          "line": 3,
+          "column": 10
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 11
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "val",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 4,
+          "column": 9
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "arr",
+          "line": 4,
+          "column": 11
+        },
+        {
+          "type": "LBRACKET",
+          "value": "[",
+          "line": 4,
+          "column": 14
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 4,
+          "column": 15
+        },
+        {
+          "type": "RBRACKET",
+          "value": "]",
+          "line": 4,
+          "column": 16
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 4,
+          "column": 18
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "arr",
+          "line": 4,
+          "column": 20
+        },
+        {
+          "type": "LBRACKET",
+          "value": "[",
+          "line": 4,
+          "column": 23
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 4,
+          "column": 24
+        },
+        {
+          "type": "RBRACKET",
+          "value": "]",
+          "line": 4,
+          "column": 25
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 4,
+          "column": 26
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "LBRACKET",
+        "INT_LITERAL",
+        "RBRACKET",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "LBRACKET",
+        "INT_LITERAL",
+        "RBRACKET",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "LBRACKET",
+        "INT_LITERAL",
+        "RBRACKET",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "LBRACKET",
+        "INT_LITERAL",
+        "RBRACKET",
+        "PLUS",
+        "IDENTIFIER",
+        "LBRACKET",
+        "INT_LITERAL",
+        "RBRACKET",
+        "SEMICOLON"
+      ],
+      "category": "array",
+      "difficulty": "intermediate"
+    },
+    {
+      "sample_id": "C008",
+      "source_code": "int factorial(int n) {\n    if (n == 0) {\n        return 1;\n    }\n    return n * factorial(n - 1);\n}\n",
+      "is_correct": true,
+      "errors": [],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "factorial",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 14
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 15
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "n",
+          "line": 1,
+          "column": 19
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 1,
+          "column": 20
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 1,
+          "column": 22
+        },
+        {
+          "type": "KEYWORD(if)",
+          "value": "if",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 2,
+          "column": 8
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "n",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "EQ",
+          "value": "==",
+          "line": 2,
+          "column": 11
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 2,
+          "column": 14
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 2,
+          "column": 15
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 2,
+          "column": 17
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 3,
+          "column": 9
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 3,
+          "column": 16
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 17
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "n",
+          "line": 5,
+          "column": 12
+        },
+        {
+          "type": "MULTIPLY",
+          "value": "*",
+          "line": 5,
+          "column": 14
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "factorial",
+          "line": 5,
+          "column": 16
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 5,
+          "column": 25
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "n",
+          "line": 5,
+          "column": 26
+        },
+        {
+          "type": "MINUS",
+          "value": "-",
+          "line": 5,
+          "column": 28
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 5,
+          "column": 30
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 5,
+          "column": 31
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 5,
+          "column": 32
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 6,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "LPAREN",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(if)",
+        "LPAREN",
+        "IDENTIFIER",
+        "EQ",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(return)",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE",
+        "KEYWORD(return)",
+        "IDENTIFIER",
+        "MULTIPLY",
+        "IDENTIFIER",
+        "LPAREN",
+        "IDENTIFIER",
+        "MINUS",
+        "INT_LITERAL",
+        "RPAREN",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "function",
+      "difficulty": "advanced"
+    },
+    {
+      "sample_id": "C009",
+      "source_code": "int main() {\n    int x;\n    int y;\n    x = 1;\n    for (int i = 0; i <= x; i = i + 1) {\n        x = x + 1;\n    }\n    if (x >= 1) {\n        y = x + 5;\n    } else {\n        y = x;\n    }\n    return 0;\n}\n",
+      "is_correct": true,
+      "errors": [],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "main",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 1,
+          "column": 12
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 10
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "y",
+          "line": 3,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 10
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 4,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 4,
+          "column": 10
+        },
+        {
+          "type": "KEYWORD(for)",
+          "value": "for",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 5,
+          "column": 9
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 5,
+          "column": 10
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 5,
+          "column": 14
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 5,
+          "column": 16
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 5,
+          "column": 18
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 5,
+          "column": 19
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 5,
+          "column": 21
+        },
+        {
+          "type": "LTE",
+          "value": "<=",
+          "line": 5,
+          "column": 23
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 5,
+          "column": 26
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 5,
+          "column": 27
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 5,
+          "column": 29
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 5,
+          "column": 31
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 5,
+          "column": 33
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 5,
+          "column": 35
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 5,
+          "column": 37
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 5,
+          "column": 38
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 5,
+          "column": 40
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 6,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 6,
+          "column": 11
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 6,
+          "column": 13
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 6,
+          "column": 15
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 6,
+          "column": 17
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 6,
+          "column": 18
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "type": "KEYWORD(if)",
+          "value": "if",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 8,
+          "column": 8
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 8,
+          "column": 9
+        },
+        {
+          "type": "GTE",
+          "value": ">=",
+          "line": 8,
+          "column": 11
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 8,
+          "column": 14
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 8,
+          "column": 15
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 8,
+          "column": 17
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "y",
+          "line": 9,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 9,
+          "column": 11
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 9,
+          "column": 13
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 9,
+          "column": 15
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "5",
+          "line": 9,
+          "column": 17
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 9,
+          "column": 18
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "type": "KEYWORD(else)",
+          "value": "else",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 10,
+          "column": 12
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "y",
+          "line": 11,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 11,
+          "column": 11
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 11,
+          "column": 13
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 11,
+          "column": 14
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 12,
+          "column": 5
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 13,
+          "column": 12
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 13,
+          "column": 13
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 14,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "LPAREN",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(for)",
+        "LPAREN",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "LTE",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE",
+        "KEYWORD(if)",
+        "LPAREN",
+        "IDENTIFIER",
+        "GTE",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE",
+        "KEYWORD(else)",
+        "LBRACE",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "RBRACE",
+        "KEYWORD(return)",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "for_if_else",
+      "difficulty": "intermediate"
+    },
+    {
+      "sample_id": "C010",
+      "source_code": "void greet(int x) {\n    int result = x + 1;\n    return;\n}\n",
+      "is_correct": true,
+      "errors": [],
+      "tokens": [
+        {
+          "type": "KEYWORD(void)",
+          "value": "void",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "greet",
+          "line": 1,
+          "column": 6
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 11
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 12
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 1,
+          "column": 16
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 1,
+          "column": 17
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 1,
+          "column": 19
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "result",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 16
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 2,
+          "column": 18
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 2,
+          "column": 20
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 2,
+          "column": 22
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 23
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 11
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 4,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(void)",
+        "IDENTIFIER",
+        "LPAREN",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(return)",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "void_function",
+      "difficulty": "beginner"
+    },
+    {
+      "sample_id": "C011",
+      "source_code": "int main() {\n    int x = 0;\n    while (x < 5) {\n        x = x + 1;\n    }\n    return x;\n}\n",
+      "is_correct": true,
+      "errors": [],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "main",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 1,
+          "column": 12
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 11
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 2,
+          "column": 13
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 14
+        },
+        {
+          "type": "KEYWORD(while)",
+          "value": "while",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 3,
+          "column": 11
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 3,
+          "column": 12
+        },
+        {
+          "type": "LT",
+          "value": "<",
+          "line": 3,
+          "column": 14
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "5",
+          "line": 3,
+          "column": 16
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 3,
+          "column": 17
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 3,
+          "column": 19
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 4,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 4,
+          "column": 11
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 4,
+          "column": 13
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 4,
+          "column": 15
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 4,
+          "column": 17
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 4,
+          "column": 18
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 6,
+          "column": 12
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 6,
+          "column": 13
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 7,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "LPAREN",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(while)",
+        "LPAREN",
+        "IDENTIFIER",
+        "LT",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE",
+        "KEYWORD(return)",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "while_loop",
+      "difficulty": "intermediate"
+    },
+    {
+      "sample_id": "C012",
+      "source_code": "int main() {\n    int sum = 0;\n    for (int i = 0; i < 3; i = i + 1) {\n        for (int j = 0; j < 3; j = j + 1) {\n            sum = sum + i + j;\n        }\n    }\n    return sum;\n}\n",
+      "is_correct": true,
+      "errors": [],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "main",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 1,
+          "column": 12
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "sum",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 13
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 2,
+          "column": 15
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 16
+        },
+        {
+          "type": "KEYWORD(for)",
+          "value": "for",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 3,
+          "column": 9
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 3,
+          "column": 10
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 3,
+          "column": 14
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 3,
+          "column": 16
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 3,
+          "column": 18
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 19
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 3,
+          "column": 21
+        },
+        {
+          "type": "LT",
+          "value": "<",
+          "line": 3,
+          "column": 23
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "3",
+          "line": 3,
+          "column": 25
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 26
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 3,
+          "column": 28
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 3,
+          "column": 30
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 3,
+          "column": 32
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 3,
+          "column": 34
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 3,
+          "column": 36
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 3,
+          "column": 37
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 3,
+          "column": 39
+        },
+        {
+          "type": "KEYWORD(for)",
+          "value": "for",
+          "line": 4,
+          "column": 9
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 4,
+          "column": 13
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 4,
+          "column": 14
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "j",
+          "line": 4,
+          "column": 18
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 4,
+          "column": 20
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 4,
+          "column": 22
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 4,
+          "column": 23
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "j",
+          "line": 4,
+          "column": 25
+        },
+        {
+          "type": "LT",
+          "value": "<",
+          "line": 4,
+          "column": 27
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "3",
+          "line": 4,
+          "column": 29
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 4,
+          "column": 30
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "j",
+          "line": 4,
+          "column": 32
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 4,
+          "column": 34
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "j",
+          "line": 4,
+          "column": 36
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 4,
+          "column": 38
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 4,
+          "column": 40
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 4,
+          "column": 41
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 4,
+          "column": 43
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "sum",
+          "line": 5,
+          "column": 13
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 5,
+          "column": 17
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "sum",
+          "line": 5,
+          "column": 19
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 5,
+          "column": 23
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 5,
+          "column": 25
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 5,
+          "column": 27
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "j",
+          "line": 5,
+          "column": 29
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 5,
+          "column": 30
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 6,
+          "column": 9
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "sum",
+          "line": 8,
+          "column": 12
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 8,
+          "column": 15
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 9,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "LPAREN",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(for)",
+        "LPAREN",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "LT",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(for)",
+        "LPAREN",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "LT",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "IDENTIFIER",
+        "PLUS",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "RBRACE",
+        "RBRACE",
+        "KEYWORD(return)",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "nested_loop",
+      "difficulty": "advanced"
+    },
+    {
+      "sample_id": "E001",
+      "source_code": "int x = 5\nint y = 10;\nint sum = x + y;\n",
+      "is_correct": false,
+      "errors": [
+        {
+          "error_type": "MISSING_SEMICOLON",
+          "line": 1,
+          "column": 9,
+          "description": "Statement on line 1 appears to be missing a semicolon.",
+          "suggestion": "Add ';' at the end of line 1: `int x = 5;`"
+        }
+      ],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 1,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "5",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "y",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "10",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 11
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "sum",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 3,
+          "column": 9
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 3,
+          "column": 11
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 3,
+          "column": 13
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "y",
+          "line": 3,
+          "column": 15
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 16
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "IDENTIFIER",
+        "SEMICOLON"
+      ],
+      "category": "missing_semicolon",
+      "difficulty": "beginner"
+    },
+    {
+      "sample_id": "E002",
+      "source_code": "if (x > 0) {\n    int y = 1;\n",
+      "is_correct": false,
+      "errors": [
+        {
+          "error_type": "UNMATCHED_LBRACE",
+          "line": 1,
+          "column": 12,
+          "description": "Opening '{' at line 1 has no matching '}'.",
+          "suggestion": "Add a closing '}' to close the block opened here."
+        }
+      ],
+      "tokens": [
+        {
+          "type": "KEYWORD(if)",
+          "value": "if",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 4
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "GT",
+          "value": ">",
+          "line": 1,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 1,
+          "column": 12
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "y",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 11
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 2,
+          "column": 13
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 14
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(if)",
+        "LPAREN",
+        "IDENTIFIER",
+        "GT",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON"
+      ],
+      "category": "unmatched_brace",
+      "difficulty": "beginner"
+    },
+    {
+      "sample_id": "E003",
+      "source_code": "int x = 5;\nif (x = 0) {\n    return 1;\n}\n",
+      "is_correct": false,
+      "errors": [
+        {
+          "error_type": "ASSIGNMENT_IN_CONDITION",
+          "line": 2,
+          "column": 7,
+          "description": "Assignment '=' used inside condition at line 2. Likely meant '=='.",
+          "suggestion": "Replace '=' with '==' to compare values instead of assigning."
+        }
+      ],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 1,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "5",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "KEYWORD(if)",
+          "value": "if",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 2,
+          "column": 4
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 2,
+          "column": 10
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 2,
+          "column": 12
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 3,
+          "column": 12
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 13
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 4,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(if)",
+        "LPAREN",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(return)",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "assignment_in_condition",
+      "difficulty": "beginner"
+    },
+    {
+      "sample_id": "E004",
+      "source_code": "int result = (a + b * c;\n",
+      "is_correct": false,
+      "errors": [
+        {
+          "error_type": "UNMATCHED_LPAREN",
+          "line": 1,
+          "column": 14,
+          "description": "Opening '(' at line 1 has no matching ')'.",
+          "suggestion": "Add a closing ')' to match this parenthesis."
+        }
+      ],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "result",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 1,
+          "column": 12
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 14
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "a",
+          "line": 1,
+          "column": 15
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 1,
+          "column": 17
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "b",
+          "line": 1,
+          "column": 19
+        },
+        {
+          "type": "MULTIPLY",
+          "value": "*",
+          "line": 1,
+          "column": 21
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "c",
+          "line": 1,
+          "column": 23
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 1,
+          "column": 24
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "LPAREN",
+        "IDENTIFIER",
+        "PLUS",
+        "IDENTIFIER",
+        "MULTIPLY",
+        "IDENTIFIER",
+        "SEMICOLON"
+      ],
+      "category": "unmatched_paren",
+      "difficulty": "beginner"
+    },
+    {
+      "sample_id": "E005",
+      "source_code": "int sum = 0\nfor (int i = 0; i < 5; i = i + 1) {\n    sum = sum + i;\n}\n",
+      "is_correct": false,
+      "errors": [
+        {
+          "error_type": "MISSING_SEMICOLON",
+          "line": 1,
+          "column": 11,
+          "description": "Statement on line 1 appears to be missing a semicolon.",
+          "suggestion": "Add ';' at the end of line 1: `int sum = 0;`"
+        }
+      ],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "sum",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 1,
+          "column": 11
+        },
+        {
+          "type": "KEYWORD(for)",
+          "value": "for",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 2,
+          "column": 6
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 2,
+          "column": 10
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 12
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 2,
+          "column": 14
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 15
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 2,
+          "column": 17
+        },
+        {
+          "type": "LT",
+          "value": "<",
+          "line": 2,
+          "column": 19
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "5",
+          "line": 2,
+          "column": 21
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 22
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 2,
+          "column": 24
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 26
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 2,
+          "column": 28
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 2,
+          "column": 30
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 2,
+          "column": 32
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 2,
+          "column": 33
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 2,
+          "column": 35
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "sum",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 3,
+          "column": 9
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "sum",
+          "line": 3,
+          "column": 11
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 3,
+          "column": 15
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 3,
+          "column": 17
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 18
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 4,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "KEYWORD(for)",
+        "LPAREN",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "LT",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "missing_semicolon",
+      "difficulty": "intermediate"
+    },
+    {
+      "sample_id": "E006",
+      "source_code": "int x = 5;\nif (x > 0) {\n    return x;\n}\n}\n",
+      "is_correct": false,
+      "errors": [
+        {
+          "error_type": "UNMATCHED_RBRACE",
+          "line": 5,
+          "column": 1,
+          "description": "Unexpected '}' at line 5 with no matching '{'.",
+          "suggestion": "Remove the extra '}' or add a matching '{' earlier."
+        }
+      ],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 1,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "5",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "KEYWORD(if)",
+          "value": "if",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 2,
+          "column": 4
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "GT",
+          "value": ">",
+          "line": 2,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 2,
+          "column": 10
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 2,
+          "column": 12
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 3,
+          "column": 12
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 13
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 5,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(if)",
+        "LPAREN",
+        "IDENTIFIER",
+        "GT",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(return)",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "RBRACE",
+        "RBRACE"
+      ],
+      "category": "extra_brace",
+      "difficulty": "intermediate"
+    },
+    {
+      "sample_id": "E007",
+      "source_code": "int i = 0;\nwhile (i = 10) {\n    i = i + 1;\n}\n",
+      "is_correct": false,
+      "errors": [
+        {
+          "error_type": "ASSIGNMENT_IN_CONDITION",
+          "line": 2,
+          "column": 10,
+          "description": "Assignment '=' used inside condition at line 2. Likely meant '=='.",
+          "suggestion": "Replace '=' with '==' to compare values instead of assigning."
+        }
+      ],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 1,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "KEYWORD(while)",
+          "value": "while",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 2,
+          "column": 7
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 2,
+          "column": 8
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 10
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "10",
+          "line": 2,
+          "column": 12
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 2,
+          "column": 14
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 2,
+          "column": 16
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 3,
+          "column": 7
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 3,
+          "column": 9
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 3,
+          "column": 11
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 3,
+          "column": 13
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 14
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 4,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(while)",
+        "LPAREN",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "assignment_in_condition",
+      "difficulty": "intermediate"
+    },
+    {
+      "sample_id": "E008",
+      "source_code": "int factorial(int n) {\n    if (n == 0) {\n        return 1\n    }\n    return n * factorial(n - 1);\n}\n",
+      "is_correct": false,
+      "errors": [],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "factorial",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 14
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 15
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "n",
+          "line": 1,
+          "column": 19
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 1,
+          "column": 20
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 1,
+          "column": 22
+        },
+        {
+          "type": "KEYWORD(if)",
+          "value": "if",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 2,
+          "column": 8
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "n",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "EQ",
+          "value": "==",
+          "line": 2,
+          "column": 11
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 2,
+          "column": 14
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 2,
+          "column": 15
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 2,
+          "column": 17
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 3,
+          "column": 9
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 3,
+          "column": 16
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "n",
+          "line": 5,
+          "column": 12
+        },
+        {
+          "type": "MULTIPLY",
+          "value": "*",
+          "line": 5,
+          "column": 14
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "factorial",
+          "line": 5,
+          "column": 16
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 5,
+          "column": 25
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "n",
+          "line": 5,
+          "column": 26
+        },
+        {
+          "type": "MINUS",
+          "value": "-",
+          "line": 5,
+          "column": 28
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 5,
+          "column": 30
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 5,
+          "column": 31
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 5,
+          "column": 32
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 6,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "LPAREN",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(if)",
+        "LPAREN",
+        "IDENTIFIER",
+        "EQ",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(return)",
+        "INT_LITERAL",
+        "RBRACE",
+        "KEYWORD(return)",
+        "IDENTIFIER",
+        "MULTIPLY",
+        "IDENTIFIER",
+        "LPAREN",
+        "IDENTIFIER",
+        "MINUS",
+        "INT_LITERAL",
+        "RPAREN",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "missing_semicolon",
+      "difficulty": "advanced"
+    },
+    {
+      "sample_id": "E009",
+      "source_code": "int add(int a, int b {\n    return a + b\n}\n",
+      "is_correct": false,
+      "errors": [
+        {
+          "error_type": "UNMATCHED_LPAREN",
+          "line": 1,
+          "column": 8,
+          "description": "Opening '(' at line 1 has no matching ')'.",
+          "suggestion": "Add a closing ')' to match this parenthesis."
+        }
+      ],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "add",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 8
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "a",
+          "line": 1,
+          "column": 13
+        },
+        {
+          "type": "COMMA",
+          "value": ",",
+          "line": 1,
+          "column": 14
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 16
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "b",
+          "line": 1,
+          "column": 20
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 1,
+          "column": 22
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "a",
+          "line": 2,
+          "column": 12
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 2,
+          "column": 14
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "b",
+          "line": 2,
+          "column": 16
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 3,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "LPAREN",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "COMMA",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "LBRACE",
+        "KEYWORD(return)",
+        "IDENTIFIER",
+        "PLUS",
+        "IDENTIFIER",
+        "RBRACE"
+      ],
+      "category": "multiple_errors",
+      "difficulty": "advanced"
+    },
+    {
+      "sample_id": "E010",
+      "source_code": "void greet() {\n    int x = 1;\n\n",
+      "is_correct": false,
+      "errors": [
+        {
+          "error_type": "UNMATCHED_LBRACE",
+          "line": 1,
+          "column": 14,
+          "description": "Opening '{' at line 1 has no matching '}'.",
+          "suggestion": "Add a closing '}' to close the block opened here."
+        }
+      ],
+      "tokens": [
+        {
+          "type": "KEYWORD(void)",
+          "value": "void",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "greet",
+          "line": 1,
+          "column": 6
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 11
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 1,
+          "column": 12
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 1,
+          "column": 14
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 11
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 2,
+          "column": 13
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 14
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(void)",
+        "IDENTIFIER",
+        "LPAREN",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON"
+      ],
+      "category": "unmatched_brace",
+      "difficulty": "beginner"
+    },
+    {
+      "sample_id": "E011",
+      "source_code": "int main() {\n    int x;\n    int y;\n    x = 1;\n    for (int i = 0; i <= x; i = i + 1) {\n        x = x + 1;\n    }\n    if (x >= 1) {\n        y = x + 5;\n    } else {\n        y = x\n    }\n    return 0;\n}\n",
+      "is_correct": false,
+      "errors": [
+        {
+          "error_type": "MISSING_SEMICOLON",
+          "line": 11,
+          "column": 13,
+          "description": "Statement on line 11 appears to be missing a semicolon.",
+          "suggestion": "Add ';' at the end of line 11: `y = x;`"
+        }
+      ],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "main",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 1,
+          "column": 12
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 10
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "y",
+          "line": 3,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 3,
+          "column": 10
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 4,
+          "column": 9
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 4,
+          "column": 10
+        },
+        {
+          "type": "KEYWORD(for)",
+          "value": "for",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 5,
+          "column": 9
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 5,
+          "column": 10
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 5,
+          "column": 14
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 5,
+          "column": 16
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 5,
+          "column": 18
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 5,
+          "column": 19
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 5,
+          "column": 21
+        },
+        {
+          "type": "LTE",
+          "value": "<=",
+          "line": 5,
+          "column": 23
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 5,
+          "column": 26
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 5,
+          "column": 27
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 5,
+          "column": 29
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 5,
+          "column": 31
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "i",
+          "line": 5,
+          "column": 33
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 5,
+          "column": 35
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 5,
+          "column": 37
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 5,
+          "column": 38
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 5,
+          "column": 40
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 6,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 6,
+          "column": 11
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 6,
+          "column": 13
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 6,
+          "column": 15
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 6,
+          "column": 17
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 6,
+          "column": 18
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "type": "KEYWORD(if)",
+          "value": "if",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 8,
+          "column": 8
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 8,
+          "column": 9
+        },
+        {
+          "type": "GTE",
+          "value": ">=",
+          "line": 8,
+          "column": 11
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 8,
+          "column": 14
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 8,
+          "column": 15
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 8,
+          "column": 17
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "y",
+          "line": 9,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 9,
+          "column": 11
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 9,
+          "column": 13
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 9,
+          "column": 15
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "5",
+          "line": 9,
+          "column": 17
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 9,
+          "column": 18
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "type": "KEYWORD(else)",
+          "value": "else",
+          "line": 10,
+          "column": 7
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 10,
+          "column": 12
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "y",
+          "line": 11,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 11,
+          "column": 11
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 11,
+          "column": 13
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 12,
+          "column": 5
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 13,
+          "column": 12
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 13,
+          "column": 13
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 14,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "LPAREN",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(for)",
+        "LPAREN",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "LTE",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE",
+        "KEYWORD(if)",
+        "LPAREN",
+        "IDENTIFIER",
+        "GTE",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE",
+        "KEYWORD(else)",
+        "LBRACE",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "RBRACE",
+        "KEYWORD(return)",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "missing_semicolon",
+      "difficulty": "intermediate"
+    },
+    {
+      "sample_id": "E012",
+      "source_code": "int main() {\n    int x = 5;\n    if (x = 1) {\n        return x;\n    }\n    return 0;\n}\n",
+      "is_correct": false,
+      "errors": [
+        {
+          "error_type": "ASSIGNMENT_IN_CONDITION",
+          "line": 3,
+          "column": 11,
+          "description": "Assignment '=' used inside condition at line 3. Likely meant '=='.",
+          "suggestion": "Replace '=' with '==' to compare values instead of assigning."
+        }
+      ],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "main",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 1,
+          "column": 12
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 11
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "5",
+          "line": 2,
+          "column": 13
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 14
+        },
+        {
+          "type": "KEYWORD(if)",
+          "value": "if",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 3,
+          "column": 8
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 3,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 3,
+          "column": 11
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 3,
+          "column": 13
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 3,
+          "column": 14
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 3,
+          "column": 16
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 4,
+          "column": 9
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 4,
+          "column": 16
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 4,
+          "column": 17
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 6,
+          "column": 12
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 6,
+          "column": 13
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 7,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "LPAREN",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(if)",
+        "LPAREN",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(return)",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "RBRACE",
+        "KEYWORD(return)",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "assignment_in_condition",
+      "difficulty": "intermediate"
+    },
+    {
+      "sample_id": "E013",
+      "source_code": "int main() {\n    int x = 0;\n    while (x < 5) {\n        x = x + 1;\n    return x;\n}\n",
+      "is_correct": false,
+      "errors": [
+        {
+          "error_type": "UNMATCHED_LBRACE",
+          "line": 1,
+          "column": 12,
+          "description": "Opening '{' at line 1 has no matching '}'.",
+          "suggestion": "Add a closing '}' to close the block opened here."
+        }
+      ],
+      "tokens": [
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 1,
+          "column": 1
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "main",
+          "line": 1,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 1,
+          "column": 9
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 1,
+          "column": 10
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 1,
+          "column": 12
+        },
+        {
+          "type": "KEYWORD(int)",
+          "value": "int",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 2,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 2,
+          "column": 11
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "0",
+          "line": 2,
+          "column": 13
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 2,
+          "column": 14
+        },
+        {
+          "type": "KEYWORD(while)",
+          "value": "while",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "type": "LPAREN",
+          "value": "(",
+          "line": 3,
+          "column": 11
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 3,
+          "column": 12
+        },
+        {
+          "type": "LT",
+          "value": "<",
+          "line": 3,
+          "column": 14
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "5",
+          "line": 3,
+          "column": 16
+        },
+        {
+          "type": "RPAREN",
+          "value": ")",
+          "line": 3,
+          "column": 17
+        },
+        {
+          "type": "LBRACE",
+          "value": "{",
+          "line": 3,
+          "column": 19
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 4,
+          "column": 9
+        },
+        {
+          "type": "ASSIGN",
+          "value": "=",
+          "line": 4,
+          "column": 11
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 4,
+          "column": 13
+        },
+        {
+          "type": "PLUS",
+          "value": "+",
+          "line": 4,
+          "column": 15
+        },
+        {
+          "type": "INT_LITERAL",
+          "value": "1",
+          "line": 4,
+          "column": 17
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 4,
+          "column": 18
+        },
+        {
+          "type": "KEYWORD(return)",
+          "value": "return",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "type": "IDENTIFIER",
+          "value": "x",
+          "line": 5,
+          "column": 12
+        },
+        {
+          "type": "SEMICOLON",
+          "value": ";",
+          "line": 5,
+          "column": 13
+        },
+        {
+          "type": "RBRACE",
+          "value": "}",
+          "line": 6,
+          "column": 1
+        }
+      ],
+      "token_sequence": [
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "LPAREN",
+        "RPAREN",
+        "LBRACE",
+        "KEYWORD(int)",
+        "IDENTIFIER",
+        "ASSIGN",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(while)",
+        "LPAREN",
+        "IDENTIFIER",
+        "LT",
+        "INT_LITERAL",
+        "RPAREN",
+        "LBRACE",
+        "IDENTIFIER",
+        "ASSIGN",
+        "IDENTIFIER",
+        "PLUS",
+        "INT_LITERAL",
+        "SEMICOLON",
+        "KEYWORD(return)",
+        "IDENTIFIER",
+        "SEMICOLON",
+        "RBRACE"
+      ],
+      "category": "unmatched_brace",
+      "difficulty": "intermediate"
+    }
+  ]
+}
